@@ -240,12 +240,41 @@ HEADER
   align-items: flex-start;
 } */
 
-.header__email--input {
-
+.header__container {
+    position: relative;
+    border-style: solid;
+    border: 2px solid  #e9e6e6;
+    color:rgb(150, 147, 147);
+    width: 450px;
+    padding: 35px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+        }
   
    /* text-decoration: none; to remove underline*/
-}
 
+        .signup-button {
+          display: flex;
+          justify-content: center;
+          position: absolute;
+          top: 10%;
+          left: 58%;
+          z-index: 1;
+          white-space: nowrap;
+          background-color: #007bff; /* Blue background */
+          color: white;              /* White text color */
+          padding: 18px 90px;        /* Padding around the text */
+          border: none;              /* Remove default border */
+          border-radius: 100px;        /* Rounded corners */
+          cursor: pointer;           /* Change cursor to a hand on hover */
+          width: 20%;               /* Full width of the form container */
+          font-size: 16px;
+          transition: background-color 0.3s ease; /* Smooth color transition on hover */
+        }
+
+        .signup-button:hover {
+            background-color: #0056b3; /* Darker blue on hover */
+        }
 .header__email--input-primary,
 /* .left-div-3 {
     display: flex;
