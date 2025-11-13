@@ -295,8 +295,7 @@ HEADER
     opacity: calc(50%);
 }
 
-.header__illustration,
-.quality__hero {
+.header__illustration {
   max-width: 700px;
   height: auto;
 }
@@ -306,9 +305,7 @@ HEADER
   height: auto;
     /* flex: 0 0 50%; */
 } 
-.quality__image {
-  flex: 0 0 50%;
-}
+
     
 .header__description--para {
   color: #243e63;
@@ -451,16 +448,17 @@ Quality
 
 .quality__tag {
   font-size: 24px;
-  color: #6415ff; 
+  color: #6415ff !important;
   font-weight: 700;
   letter-spacing: .08em;
+  padding-bottom: 80px;
   padding-bottom: 20px;
 }
 
 .quality__title {
   text-align: left;
   margin-top: 0px;
- font-size: 56px;
+  font-size: 56px;
   font-weight: 900;
   letter-spacing: 2px;
   color: rgb(36, 62, 99); 
@@ -476,6 +474,15 @@ Quality
   padding-bottom: 0px;
 }
 
+.quality__image {
+  flex: 0 0 50%;
+}
+
+.quality__hero {
+  max-width: 650px;
+  height: auto;
+  padding-top: 25px;
+}
 /* 
 
 SMALL SCREENS
