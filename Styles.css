@@ -21,16 +21,8 @@ body {
     padding: 10px auto;
     min-height: 100vh;
     Max-width: 1200px;
-    font-family: 'Inter', sans-serif;
+    /* font-family: 'Inter', sans-serif; */
   
-}
-h5 {
-  font-size: 48px;
-  font-weight: 700px;
-}
-h2, h3, h4,h5, h6, span {
-  color: rgb(36, 62, 99);
-  line-height: 1.25;
 }
 
 a {
@@ -43,7 +35,7 @@ a {
 }
 p {
   line-height: 1.5;
-  font-size: 16px;
+
 }
 .purple {
   color: #6415ff;
@@ -62,21 +54,16 @@ p {
   text-decoration: none;
 }
 .btn:hover {
-  background-color: rgb(80, 17, 204); Darker blue on hover
+  background-color: rgb(80, 17, 204); /*Darker blue on hover */
 }
 /* 
 
 NAVAGATION BAR 
 
 */
-nav {
 
-}
 
-.row {
-  width: 100%;
-  height: 100px;
-}
+
 
 .nav__row {
   display:flex;
@@ -577,7 +564,7 @@ STEPS
   box-sizing: border-box;
   margin: 0px 10px 0px 0px;
   font-size: 48px;
-  font-weight: 900;
+  font-weight: 600;
   letter-spacing: 2px;
   color: rgb(36, 62, 99); 
 }
@@ -587,8 +574,6 @@ STEPS
   color: rgb(113, 128, 150);
   font-size: 14px;
   font-weight: 500px;
-  font-weight: 100px;
-  opacity: 10%;
 }
 .steps__img {
   box-sizing: border-box;
@@ -611,10 +596,10 @@ STEPS
 .step__title {
   box-sizing: border-box;
   /* display: block; */
-  font-size: 20px;
-  font-weight: 600px;
+  font-size:20px;
+  font-weight: 600;
   color: rgb(36, 62, 99);
-  font-weight: 600px;
+ 
 }
 
 
