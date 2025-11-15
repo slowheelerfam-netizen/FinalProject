@@ -1,6 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 * {
   font-family: 'Inter', sans-serif;
   padding: 0;
@@ -30,13 +29,8 @@ a {
   color: rgb#060607(36, 62, 99);
   text-decoration: none;
   list-style-type: none;
-
-  
 }
-p {
-  line-height: 1.5;
 
-}
 .purple {
   color: #6415ff;
 }
@@ -564,7 +558,7 @@ STEPS
   box-sizing: border-box;
   margin: 0px 10px 0px 0px;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 900;
   letter-spacing: 2px;
   color: rgb(36, 62, 99); 
 }
@@ -572,8 +566,7 @@ STEPS
   box-sizing: border-box;
   display:block;
   color: rgb(113, 128, 150);
-  font-size: 14px;
-  font-weight: 500px;
+  font-size: 44px;
 }
 .steps__img {
   box-sizing: border-box;
@@ -582,7 +575,7 @@ STEPS
   box-sizing: border-box;
   /* flex-wrap: wrap; */
   width: 100%;
-  transform: translateY(170px);
+  transform: translateY(70px);
 }
 .steps__tag {
   width: 100%;
@@ -599,6 +592,7 @@ STEPS
   font-size:20px;
   font-weight: 600;
   color: rgb(36, 62, 99);
+  padding-bottom: 10px;
  
 }
 
