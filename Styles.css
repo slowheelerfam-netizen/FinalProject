@@ -309,12 +309,19 @@ HEADER
 
 .header__illustration {
   display: flex;
+  flex-basis: 0%;
+  flex-grow: 1;
+  flex-shrink: 1;
+  flex-wrap: wrap;
   max-width: 600px;
   height: auto;
 }
 
 .header__img {
-  max-width: 400px;
+
+  flex: 1 1 300px;
+  max-width: 500px;
+  max-width: 600px;
   height: auto;
     /* flex: 0 0 50%; */
 } 
@@ -528,7 +535,7 @@ STEPS
 
 .steps__main {
 
-  padding-bottom: 150px;
+  padding-bottom: 30px;
 }
 
 .steps__container {
@@ -549,13 +556,14 @@ STEPS
   align-items: flex-start;
   /* align-items: flex-start; */
   max-width: 500px;
-  padding: 30px auto
+  padding: 10px;
 }
 .step__number {
   display: block;
   box-sizing: border-box;
   font-size: 36px;
   color: #cbd5e0;
+  padding-right: 25px;
 }
 .step__description {
   display: flex;
@@ -576,8 +584,11 @@ STEPS
 .step-para {
   box-sizing: border-box;
   display:block;
+  color: rgb(113, 128, 150);
   font-size: 14px;
+  font-weight: 500px;
   font-weight: 100px;
+  opacity: 10%;
 }
 .steps__img {
   box-sizing: border-box;
@@ -599,8 +610,9 @@ STEPS
 
 .step__title {
   box-sizing: border-box;
-  display: block;
+  /* display: block; */
   font-size: 20px;
+  font-weight: 600px;
   color: rgb(36, 62, 99);
   font-weight: 600px;
 }
@@ -638,6 +650,8 @@ SMALL SCREENS
   .header__img {
     flex: 0 0 .33%;
   }
+
+column (flex-direction: column)
   /* .header__illustration {
   width: 100%;
   height: auto;
