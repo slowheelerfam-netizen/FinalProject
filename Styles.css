@@ -486,6 +486,7 @@ Quality
   padding: 10px;
   padding-top: 0px;
   padding-bottom: 0px;
+  
 }
 
 .quality__img {
@@ -562,12 +563,16 @@ STEPS
   letter-spacing: 2px;
   color: rgb(36, 62, 99); 
 }
-.step-para {
+.step__para {
   box-sizing: border-box;
   display:block;
-  color: rgb(113, 128, 150);
-  font-size: 18px;
+  color: #718096;
+  font-size: 14px;
+  font-weight: 600;
+  padding-top: 20px;
+  opacity: 90%;
 }
+
 .steps__img {
   box-sizing: border-box;
   display: flex;
@@ -614,33 +619,3 @@ STEPS
 SMALL SCREENS
 
 */
-
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
-    margin: 10px;
-  }
-  /* Add more specific styles for elements on small screens */
-  h1 {
-    font-size: 24px;
-  }
-  .steps___img,
-  .quality__img,
-  .header__img {
-    flex: 0 0 .33%;
-  }
-
-column (flex-direction: column)
-  /* .header__illustration {
-  width: 100%;
-  height: auto;
-} 
-
-#quality {
-  max-width: 300px;
-  height: auto;
-} */
-
-
-}
-
