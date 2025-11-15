@@ -3,25 +3,21 @@
 * {
   font-family: 'Inter', sans-serif;
   padding: 0;
-  margin-left: 0;
+  margin: 0;
   box-sizing: border-box;
+  font-family: 'Inter' sans-serif;
+  color: #243e63;
   max-width: 1200px;
 }
 
 #Landing {
+  box-sizing: border-box;
   margin-bottom: 200px;
 }
 
 body {
     display: block;
-    flex: 1;
-    margin-left: 25px;
-    margin-right: 25px;
-    padding: 10px auto;
-    min-height: 100vh;
-    Max-width: 1200px;
-    /* font-family: 'Inter', sans-serif; */
-  
+    padding: 0 32px;
 }
 
 a {
@@ -56,12 +52,18 @@ NAVAGATION BAR
 
 */
 
+nav {
+  padding-top: 32px;
+  display: flex;
+}
 
-
-
+.row {
+  width: 100%;
+  max-width: 1200px fit-content;
+  margin: 0 auto;
+}
 .nav__row {
   display:flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
   padding-top: 12px;
@@ -70,31 +72,26 @@ NAVAGATION BAR
 
 .nav__logo {
   display: flex;
-  flex: 1;
-  margin-right: 100px;
+  align-items: center;
+  margin: 8px 0;
+  padding-bottom: 4px;
+}
 
-  /* position: absolute; */
+.nav__logo--img {
+  width: 40px;
+  height: 40px;
 }
 
 .nav__logo--title {
-    box-sizing: border-box;
-    color: rgb(36, 62, 99);
-    display: block;
-    height: 31.5px;
     font-size: 24px;
     font-weight: 900;
-    letter-spacing: 0.6px;
-    margin-bottom: 0px;
     margin-left: 12px;
-    margin-right: 0px;
-    margin-top: 0px;
     padding-bottom: 2px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-top: 0px;
-    
-    position: relative;
-    top: 6px;  
+}
+
+.nav_links {
+  align-items: center;
+  padding-bottom: 2px;
 }
 
 #menu-list {
@@ -163,10 +160,6 @@ nav li:last-child {
 }
 
     
-.nav__logo--img {
-  width: 40px;
-  height: 40px;
-}
 
 a {
     text-decoration: none;
@@ -565,20 +558,45 @@ STEPS
 }
 
 
-/* .step:first-child {
-  display: flex;
-  flex-direction: column;
-  padding-top: 0px;
-}
-.step:nth-child(2) {
-  display: flex;
-  flex-direction: row;
-  padding-top: 0px;
-} */
-
-
 /* 
 
-SMALL SCREENS
+VALUES
 
 */
+
+
+#values {
+  display: block;
+  padding: 10px auto;
+  margin-left: 15px;
+  margin-right: 55px;
+  width: 100%;
+  height: auto;
+}
+
+.value__description {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 100%;
+  padding-top: 120px;
+}
+
+.values__list {
+  box-sizing: border-box;
+  display: block;
+}
+
+.values__img {
+  max-width: 100%;
+}
+
+
+
+/*small screens and mobile */
+
+.nav_links {
+  display: none;
+}

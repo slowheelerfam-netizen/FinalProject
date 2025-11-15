@@ -15,53 +15,72 @@
             
         <div class="nav__logo">
                 <img class="nav__logo--img" src="./assets/logo.svg" alt="LOGO">
-                <p class="nav__logo--title">Treact</p>
+                <div class="nav__logo--title">Treact</div>
         </div>
         
         <div class="nav__links">
-
-            <ul>
-                <li><a href="#" class="nav__link link__hover-effect link__hover-effect--black">About</a></li>
-                <li><a href="#" class="nav__link link__hover-effect link__hover-effect--black">Blog</a></li>
-                <li><a href="#" class="nav__link link__hover-effect link__hover-effect--black">Pricing</a></li>
-                <li><a href="#" class="nav__link link__hover-effect link__hover-effect--black">Contact Us</a></li>
-                <li><a href="#" class="nav__link link__hover-effect link__hover-effect--black login">Login</a></li>
-                <li type="button" class="btn">Sign Up</button></li> 
-            </ul>
-            <div class="menubar" id="menu" id="menubar"></button> 
-            </div>           
-        </div>  
-    </div>                  
-  </nav>
-<header>
-<div class="header">
-    <div class="header__description">
-        <div class="header__container">
-                <div class="header__left--title">Beautiful React Templates<span class="purple">&nbsp;for you</span>
-                </div>
-                    <h3 class="header__left--para">Our templates are easy to setup, 
-                    understand and<br> customize. Fully modular components with a variety 
-                    of<br> pages and components.</h3>
-                
-            <div class="header__left--container">Your E-Mail Address
-                     <button type="submit" class="signup-button">
-                        Get Started
-                    </button>
-            </div> 
-           
-                 <h3 class="header__left--customer">OUR TRUSTED CUSTOMERS</h3>
-                 <img class="header__left--img" src="./assets/customers-logo-strip.png">
-                                          
+                <a href="#" class="nav__link">About</a>
+                <a href="#" class="nav__link">Blog</a>
+                <a href="#" class="nav__link">Pricing</a>
+                <a href="#" class="nav__link">Contact Us</a>
+                <a href="#" class="nav__link login">Login</a>
+                <a href="#" class="nav__link nav__link--primary">Sign Up</a>
         </div>
-            <div class="header__img">
-                <img class="header__illustration" src="./assets/design-illustration-2.svg">
-            </div>     
-    </div> 
-</div>
+                <button class="btn__menu" onclick="closeMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                    </svg>
+                </button>
+    </div>
+  </nav>
+  <div class="menu">
+        <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+        </button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                <line x1="18" y1="6" x2="6" y2="18"></line>
+                <line x1="6" y1="6" x2="18" y2="18"></line>
+        </svg>
+        <div class="menu__links">
+                    <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                    <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                    <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                    <a href="#contact us" class="menu__link" onclick="closeMenu()">Contact</a>
+                    <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+                    <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign Up</a>
+        </div> 
+  </div>
+                
+<header>
+<div class="container">
+    <div class="row">
+        <div class="header__description">
+            <div class="header__container">
+                <h1>Beautiful React Templates<span class="purple">&nbsp;for you</span>
+                </h1>
+                <p class="header__left--para">Our templates are easy to setup, 
+                    understand and<br> customize. Fully modular components with a variety 
+                    of<br> pages and components.
+                </p>
+                    <div class="header__email">
+                        <input type="text" class="header__email--input" placeholder="Your E-Mail Address">         
+                        <button class="header__email--btn">Get Started</button>
+                    </div>
+                <p class="header__customer--title">OUR TRUSTED CUSTOMERS</p>
+                 <img src="./assets/customers-logo-strip.png" class="header__customers">
+            </div>
+            <figure class="header__img--wrapper">
+                <img src="./assets/design-illustration-2.svg" class="header__img">
+            </figure>     
+            </div>
+        </div>
+    </div>
 </header>
 </section>
+
 <main>
- <section id="features">
+
+<section id="features">
             <div class="container">
                 <div class="row__narrow">
                 <h4 class="section__tag">FEATURES</h4> 
@@ -220,6 +239,25 @@
     </div>
 </section>
 
+
+<section id="values">
+    <div class="container">
+        <div class="row">
+            <div class="values__description">
+                <div class="section__tag">OUR VALUES</div>
+                    <h2 class="section__title">We Believe in&nbsp;
+                        <span class="purple">Simple Things.</span>
+                    </h2>
+                    <div class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                        Enim <br>quam cupiditate commodi qui excepturi laborum adipisci officiis,
+                        corporis possimus. Reiciendis?</div>  
+                    <div class="values__list"></div>
+                    <button class="btn">Learn More</button>
+            </div>
+                    <img class="values__img" src="./assets/prototype-illustration.svg">
+        </div>
+    </div>
+</section>
 
     <footer>
         <div class="about-me__links">
