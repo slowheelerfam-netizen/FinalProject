@@ -203,7 +203,7 @@ HEADER
   width: 100%;
 }
 
-.header__container {
+.header__f {
   display: flex;
   flex-direction: column;
   width: 450px;
@@ -333,15 +333,11 @@ FEATURES SECTION
   width: 100%;
   height: auto;
 }
-h7 {
-    font-size: 16px;
-    color: #6415ff;
-    font-weight: 700;
-    letter-spacing: .08em;
-}
+
 .section__tag {
   display: flex;
   justify-content: center;
+  color: #6415ff;
   padding-top: 160px;
 }
 
@@ -367,7 +363,6 @@ h7 {
   padding: 40px auto;
   padding-top: 40px;
   padding-bottom: 70px;
-
 }
 
 .highlight__wrapper {
@@ -377,7 +372,6 @@ h7 {
   flex: 1;
   padding-bottom: 30px;
   padding-left: 30px
-
 }
 
 .highlight__container {
@@ -387,22 +381,18 @@ h7 {
   height: 300px;
   align-items: center;
 }
+
 .highlight__sub--container {
   padding-left: 20px;
   margin: 5px;
 }
+
 .highlight__container h2,
 .highlight__container p {
   text-align: left;
   padding-left: 20px;
   margin: 5px;
 }
-
-.flex-highlight div {
-  padding: 20px;
-  background-color: aquamarine;
-}
-
 
 .highlight__img {
   align-self: start;
@@ -419,8 +409,11 @@ h7 {
   opacity: 40%;
   letter-spacing: .5px;
   line-height: 2.0;
-
 }
+
+
+
+
 
 
 /*
@@ -511,9 +504,7 @@ Quality
 STEPS
 
 */
-.steps__section {
-  display: block;
-}
+
 
 .steps__main {
 
