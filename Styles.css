@@ -275,6 +275,7 @@ header .row {
 }
 .header__description--para {
   margin: 32px 0;
+  padding-top: 40px;
 }
 .header__email {
   width: 100%;
