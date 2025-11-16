@@ -276,16 +276,12 @@ header .row {
 }
 .header__description {
   max-width: 600px;
-  /* margin-left: 94px; */
 }
 .header__description h1 {
   padding-top: 0px;
   padding-bottom: 20px;
 }
-/* .header__description p {
-  padding-top: 40px;
-  padding-bottom: 20px;
-}  */
+
 .header__description--para {
   padding-top: 20px;
 } 
