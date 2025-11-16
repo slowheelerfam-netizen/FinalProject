@@ -280,21 +280,30 @@ header .row {
 }
 .header__description h1 {
   padding-top: 0px;
-  padding-bottom: 40px;
+  padding-bottom: 20px;
 }
 /* .header__description p {
   padding-top: 40px;
   padding-bottom: 20px;
 }  */
 .header__description--para {
-  margin: 32px 0;
-  padding-top: 40px;
+  padding-top: 20px;
 } 
+
+.header__left--para {
+  margin-top: 10px;
+  font-size: 18px;
+  color: rgb(124, 139, 161);
+  line-height: 1.625;
+  font-weight: 500;
+  padding-bottom: 30px;
+}
+
 .header__email {
   width: 100%;
   max-width: 448px;
   height: 68px;
-  margin: 40px auto;
+
   position: relative;
   display: flex;
   justify-content: flex-end;
@@ -320,7 +329,7 @@ header .row {
   width: 100%;
   border-radius: 500px;
   border: 2px solid rgb(229, 231, 235);
-  padding: 20px 192px 20px 32px;
+  padding: 20px 192px 20px 40px;
   color: rgb(36, 62, 99);
   font-size: 16px;
   font-weight: 500;
@@ -344,9 +353,10 @@ header .row {
   border-color: rgba(100, 21, 255);
 }
 
-.header__customers--title {
-    margin-top: 80px;
+.header__customer--title {
+    margin-top: 50px;
     color: #a0aec0;
+    padding-bottom: 20px;
     font-size: 12px;
     font-weight: 700;
     letter-spacing: 0.6;
@@ -421,7 +431,7 @@ header {
   margin-top: 8px;
   margin-left: 16px;
 }
-.feature__para {
+.feature__para{
   margin-top: 16px;
   font-size: 16px;
   max-width: calc(634px / 3);
@@ -1428,7 +1438,6 @@ footer {
   .header__email--input {
     position: static;
     padding: 16px 0;
-    padding-left: 32px;
     line-height: 1.5;
   }
   .header__email--btn {
