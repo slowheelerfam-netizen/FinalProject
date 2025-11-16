@@ -46,6 +46,22 @@ a {
 .btn:hover {
   background-color: rgb(80, 17, 204); /*Darker blue on hover */
 }
+
+.btn__menu {
+  box-sizing: border-box;
+  font-family: 'Inter' sans-serif;
+  color: #243e63;;
+}
+
+.btn__menu--close {
+  position: fixed;
+  top: 24px;
+  right: 18px;
+}
+
+.button {
+  cursor: not-allowed;
+}
 /* 
 
 NAVAGATION BAR 
@@ -87,14 +103,28 @@ nav {
     font-weight: 900;
     margin-left: 12px;
     padding-bottom: 2px;
+    letter-spacing: 0.6px;
 }
 
-.nav_links {
-  align-items: center;
-  padding-bottom: 2px;
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 378px;
+  margin: 24px 16px;
+  padding: 32px;
+  background-color: #fff;
+  border: 1px solid rgb(229, 231, 235);
+  border-radius: 8px;
+  z-index: 4;
+  visibility: hidden;
+  opacity: 0;
+  transform: translateX(300%);
+  transition: all 300ms ease;
 }
 
-#menu-list {
+.menu-list {
   display: none;
   background-color: white;
   width: 100%;
@@ -113,11 +143,8 @@ nav ul {
   align-items: center;
 }
 nav a {
-  height: 100%;
-  padding: 0 30px;
+  display: inline;
   text-decoration: none;
-  display: flex;
-  align-items: center;
 
 }
 nav a:hover { 
@@ -134,16 +161,37 @@ nav li:last-child {
   margin-right: auto;
 }
 
-.nav__link {
-  color: #060607;
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.35;
-  opacity: 90%;
+.nav__links {
   display: flex;
-  justify-self: center;
+  align-items: center;
+  padding-bottom: 2px;
+}
+
+.nav__link {
+  font-size: 14px;
+  font-weight: 600px;
+  letter-spacing: 0.35;
+  padding-top: 4px;;
+  border-bottom: 2px solid transparent;
+  position: relative;
+  transition: all 300ms;
   cursor: not-allowed;
 }
+.login {
+  margin: 0 24px;
+}
+
+.nav__link--primary {
+  margin: 0;
+  padding: 10px 32px;
+  margin-top: 2px;
+  border-radius: 9999px;
+  color: white;
+  background-color: #6415ff;
+  line-height: none;
+  border: none;
+}
+
 .link__hover-effect:after {
   content: "";
   position: absolute;
@@ -595,8 +643,15 @@ VALUES
 
 
 
-/*small screens and mobile */
+@media (max-width: 1024px) {
+
+  .btn__menu {
+  display: block;
+}
+}
 
 .nav_links {
   display: none;
 }
+
+
